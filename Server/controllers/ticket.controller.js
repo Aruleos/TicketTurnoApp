@@ -10,7 +10,8 @@ ticketCtrl.createTicket = async (req, res) =>{
     const nuevoTicket = new ticketModel(req.body);
     await nuevoTicket.save();
     res.json({
-        'status': 'Ticket guardado' 
+        'status': 'Ticket guardado',
+         
     });
 };
 
